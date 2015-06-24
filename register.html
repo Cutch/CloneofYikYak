@@ -1,0 +1,47 @@
+<div id="topDiv">
+<div id="topInnerDiv">
+	<span id="pageTitle">Yakity Yak</span><br>
+	<span style="color:white;"> Register </span>
+</div>	
+</div>
+<div id="content"  class="content regcontent">
+<div id="innercontent" class="innercontent regInnercontent">
+	<div id="errorBoxSpace">
+	<div id="errorBox">
+		<div id="usernamecheck" autocapitalize="none" class="fieldError">User Name is taken</div>
+		<div id="passwordcheck" autocapitalize="none" class="fieldError">Password must be at least 4 characters and contain at least one letter and one number</div>
+		<div id="emailcheck" autocapitalize="none" class="fieldError">Not a valid Email</div>
+		<div id="gendercheck" class="fieldError">Select a gender</div>
+		<div id="citycheck" class="fieldError">Must fill in both the city and province</div>
+	</div>
+	</div>
+	<div><input type="text" id="username" value="Username" class="inputBox" onfocus="inputFocus(this)" onblur="inputBlur(this);" size="22" onkeydown="keypress(this);" onkeypress="" onkeyup="checkInput(this);registerKeyPress(event);"/><span id="usernamemarker" class="fieldMarker"><img class="errImg" src="img/check.png"/></span></div>
+	<div><input type="password" id="password" value="password" class="inputBox" onfocus="inputFocus(this)" onblur="inputBlur(this);" size="22" onkeydown="keypress(this);" onkeyup="checkInput(this);registerKeyPress(event);"/><span id="passwordmarker" class="fieldMarker"><img class="errImg" src="img/check.png"/></span></div>
+	<div><input type="text" id="email" value="E-Mail" class="inputBox" onfocus="inputFocus(this)" onblur="inputBlur(this);" size="22" onkeydown="keypress(this);" onkeyup="checkInput(this);registerKeyPress(event);"></input><span id="emailmarker" class="fieldMarker"><img class="errImg" src="img/check.png"/></span></div>
+	<div id="rbuttons"><input type="radio" class="radioClass" id="gender" name="gender" value="m" onclick="checkInput(this);">Male&nbsp;&nbsp;
+	<input type="radio" class="radioClass" id="gender" name="gender" value="f" onclick="checkInput(this);">Female<span id="gendermarker" class="fieldMarker"><img class="errImg" src="img/check.png"/></span></div>
+	<div><input type="text" id="city" value="City" class="inputBox" onfocus="inputFocus(this)" onkeyup="checkInput(this);registerKeyPress(event);" onblur="inputBlur(this);" size="15" maxlength=50 onkeydown="keypress(this);"/>
+	<select id="province" class="selectBox" onkeypress="registerKeyPress(event);" onchange="checkInput(this);">
+		<option value=""></option>
+		<option value="AB">AB</option>
+		<option value="BC">BC</option>
+		<option value="MB">MB</option>
+		<option value="NB">NB</option>
+		<option value="NL">NL</option>
+		<option value="NS">NS</option>
+		<option value="ON">ON</option>
+		<option value="PE">PE</option>
+		<option value="QC">QC</option>
+		<option value="SK">SK</option>
+		<option value="NT">NT</option>
+		<option value="NU">NU</option>
+		<option value="YT">YT</option>
+	</select><span id="citymarker" class="fieldMarker"><img class="errImg" src="img/cross.png"/></span></div>
+<div id="logDiv" style="padding-top:1em;padding-right:1em">
+<span class="postButton" id="regButton" onclick="register();">Verify</span>
+<span class="postButton" id="backButton" onclick="loadPage('login.html');">Back</span></div>
+<div id="error"></div>
+</div>
+
+</div>
+<img class="mountain" src="img/mountain.png"/>

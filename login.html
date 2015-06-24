@@ -1,0 +1,18 @@
+<div id="topDiv">
+<div id="topInnerDiv">
+	<span id="pageTitle">Yakity Yak</span><br>
+	<span style="color:white;"> Log In </span>
+</div>	
+</div>
+<div id="content"  class="content">
+	<div id="innercontent" class="innercontent loginInnercontent">
+	<div class="loginInputDiv"><input type="text"  autocapitalize="none" id="username" value="Username" class="inputBox loginInput" onfocus="inputFocus(this)" onblur="inputBlur(this)" size="22" onkeypress="loginKeyPress(event);"></input></div>
+	<div class="loginInputDiv"><input type="password" id="password" value="password" class="inputBox loginInput" onfocus="inputFocus(this)" onblur="inputBlur(this)" size="22" onkeypress="loginKeyPress(event);"></input></div>
+	<div id="logDiv">
+	<span class="postButton loginButton" onclick="login();">Submit</span>
+	<span class="postButton loginButton" onclick="loadPage('register.html');">Register</span>
+	</div>
+	<div id="error"></div>
+	</div>
+</div>
+<img class="mountain" src="img/mountain.png"/>

@@ -1,0 +1,160 @@
+body{
+	background-color: #57E2CA;
+	padding:0;
+	margin:0;
+}
+@media screen and (min-width: 580px) {
+    body{font-size: 125%;}
+}
+
+@media screen and (min-width: 700px) {
+    body{font-size: 150%;}
+}
+
+@media screen and (min-width: 1000px) {
+    body{font-size: 175%;}
+}
+@media screen and (max-device-width: 480px){
+    body{font-size: 225%;}
+}
+.loginInputDiv{
+	display:inline-block;
+}
+.radioClass{
+	width:2em;
+	height:2em;
+}
+#rbuttons{
+	line-height:2em;
+	vertical-align: top;
+}
+#topDiv { 
+	text-align: center;
+	transition: left 1s, top 1s, width 1s, height 0.5s;
+}
+#topInnerDiv { 
+	display:inline-block;
+	text-align: center; 
+	transition: left 1s, top 1s, width 1s, height 0.5s;
+}
+.content { 
+	text-align: center;
+	padding:0;
+	width:100%;
+	margin:0;
+	transition: left 1s, top 1s, width 1s, height 0.5s;
+}
+.innercontent { 
+	display:inline-block;
+	padding:0;
+	margin:0; 
+	margin-top:2em;
+	text-align: center; 
+	font-family: 'Comic Sans MS', sans-serif; 
+	transition: left 1s, top 1s, width 1s, height 0.5s;
+}
+.regInnercontent{
+	margin-top:0em;
+	transition: left 1s, top 1s, width 1s, height 0.5s;
+}
+.loginInput{
+	display:inline;
+}
+.loginButton{
+	display:inline;
+	margin:0.625em;
+	max-width: 5em;
+}
+#error {
+	padding-top: 4em;
+	color: red;
+	transition: left 1s, top 1s;
+}
+.errimg {
+	width: 1.625em;
+	height: 1.625em;
+	background-color: #57E2CA;
+	margin:0em;
+	padding-left: .5em;
+}
+.inputBox {
+	display:inline-block;
+	border:0; 
+	border-bottom:solid 0.0625em #DCDCDC;
+	outline:none; color:#DCDCDC; 
+	font-size:1.25em; 
+	font-style:italic;
+	padding:0.6em;
+	border-radius: 1.25em;
+}
+.fieldMarker{
+	visibility:hidden;
+	right: 0.313em;
+	background-color: #57E2CA;
+	text-align: left;
+	white-space:normal;
+	z-index: 5;
+	margin-bottom: 0.125em;
+}
+.selectBox {
+	border:0; 
+	border-bottom:solid 0.0625em #DCDCDC; 
+	outline:none; color:#000000; 
+	font-size:1.25em; 
+	font-style:italic;
+}
+#logDiv {
+	padding-top:0.75em;
+	position: center;
+	margin: 0 auto;
+}
+#markerBox{
+	position: absolute;
+	margin-top: 0.125em;
+	right: 0px;
+	text-align: left;
+	overflow:visible;
+	z-index: 5;
+	visibility:hidden;
+}
+.fieldError{
+	left: 2.5em;
+	text-align: left;
+	position: relative;
+	white-space:normal;
+	font-size:0.75em; 
+	max-width: 20em;
+	z-index: 6;
+	background: #ffffff;
+	border:solid 1px #000000;
+	margin-bottom: 3px;
+	padding-bottom: 0.125em; 
+	padding-left: 3px;
+	display:none;
+}
+#errorBoxSpace{ 
+	min-height:2em;
+}
+#errorBox{
+	margin-top: 0.125em;
+	margin-bottom: 0.5em;
+	text-align: center;
+	transition: left 1s, top 1s;
+}
+.mountain{
+	position:fixed;
+	z-index:-1;
+	width:100%;
+	min-width:1234;
+	bottom:0px;
+}
+@media screen and (max-device-width: 640px) and (orientation: portrait){
+.loginInputDiv{
+	display:block;
+}
+}
+@media screen and (max-device-width: 640px) and (orientation: landscape){
+.loginInputDiv{
+	display:block;
+}
+}

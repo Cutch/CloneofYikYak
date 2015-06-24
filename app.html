@@ -1,0 +1,66 @@
+<div id="top-bar">
+<div id="top-table">
+	<div id="top-row">
+	<div id="top-left"><span><img class="imgButton" id="refresh" onclick="refreshMsg();" src="img/refresh.png"/></span></div>
+	<div id="top-center">
+	<span id="pageTitle">Yakity Yak</span>
+	<span id="distDiv"><div id="distWordDiv">Dist</div>
+	<select id="distIn" onchange="distChange();">
+		<option value="1">1 km</option>
+		<option value="2">2 km</option>
+		<option value="5">5 km</option>
+		<option value="10">10 km</option>
+		<option value="0">inf</option>
+	</select></span>
+	</div>
+	<div id="top-right"><img class="imgButton" style="position:absolute;right:0.313em;top:0.313em" id="pencil" onclick="showNewMessageForm(event)" src="img/pencil.png"/></div>
+	</div>
+</div>
+</div>
+<div id="msg-table">
+	<div class="map-msg-row">
+<!-- Postal Code Form -->
+<div id="postal-pos">
+<div id="postal-box">
+<div id="postal-top">
+Enter Postal Code
+</div>
+<div id="postal-body" onclick="document.getElementById('postalbox').focus();">
+<input id="postalbox" maxlength="7" size="8" onkeypress="postalKeyPress(event);"/>
+</div>
+<div id="postal-bottom">
+<div id="postDiv" style="padding-top:0.5em;">
+<span class="postButton" onclick="getLocFromPostal();">Submit</span></div>
+</div>
+</div>
+</div>
+	<div id="mapDiv"></div>
+	</div>
+	<div id="messages"> <!-- Dynamic content added via jquery -->
+	</div>
+</div>
+<!-- New Message Form -->
+<div id="newMsg" onclick="event.stopPropagation();">
+<div id="newMsg-top">
+New Message
+</div>
+<div id="newMsg-body" onclick="document.getElementById('message').focus();">
+<textarea onkeyup="textChanged(this)" id="message" rows="6" cols="50" maxlength="200"></textarea>
+</div>
+<div id="newMsg-bottom">
+<div id="postDiv">
+<span class="postButton" onclick="addMessage();">Post</span></div>
+<span id="charLeft">200</span><input id="newMsg-reply" type=hidden value="-1"/>
+</div>
+</div>
+<!-- Dev Form -->
+<div id="dev-div" style="position:fixed; left:0px;bottom:0px;background-color:darkgrey;border:1px solid black;">
+<div style="cursor:pointer;color:blue;" onclick="$(this).hide();$(this).next().show();"><b>Dev Form</b></div>
+<div id="devForm" style="display:none;">
+	<div><b>To Show Postal Code Form</b></div>
+	<div>Block location data, via browser/settings</div>
+	<div style="cursor:pointer;color:blue" onclick="devUnset();">Click Here Unset Position</div>
+	<div style="border-top:1px solid black;"><b>Back to login</b></div>
+	<div style="cursor:pointer;color:blue;" onclick="devLogout();">Log Out</div>
+</div>
+</div>

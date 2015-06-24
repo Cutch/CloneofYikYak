@@ -1,0 +1,369 @@
+textarea, input, select:focus{
+    outline: 0;
+}
+/* ----------- Header Bar ----------- */
+#top-bar {
+	position: fixed;
+	width: 100%;
+	height:  3.125em;
+	top: 0px;
+	left: 0px;
+	z-index:99;
+	background-color: #57E2CA;
+}
+#top-table { 
+	padding:0;
+	margin:0;
+	width: 100%;
+	display: table; 
+}
+
+#top-row {
+	display: table-row;
+}
+#top-center {
+	display:table-cell;
+	vertical-align: middle;
+	text-align: center;
+	height: 3.125em;
+} 
+#top-left{
+	position: absolute;
+	left: 0.313em;
+	top: 0.313em;
+	height: 2.5em;
+	line-height:2.5em;
+	vertical-align: bottom;
+	text-align: right;
+}
+.imgButton{
+	width: 2.5em;
+	height: 2.5em;
+}
+#pageTitle{
+	color:white;
+	font: bold 2em arial, Geneva;
+}
+#distDiv{
+	position: absolute;
+	right: 2.813em;
+	top: 1.25em;
+}
+#distWordDiv{
+	display:inline-block;
+	font: bold 1em arial, sans-serif;
+}
+#distIn{
+	font: bold 1em arial, sans-serif;
+	background-color: #57E2CA;
+	border:0;
+	outline:0;
+}
+@media screen and (max-width: 480px), screen (max-device-width: 640px) {
+	#distWordDiv{
+		display:none;
+	}
+}
+@media (max-width: 415px) {
+	#distDiv{
+		right: 0px;
+		top: 3.125em;
+		padding:0px 0px 0.313em 0.313em;
+		background-color: #57E2CA;
+		border-bottom-left-radius: 0.625em 0.313em;
+	}
+}
+/* ----------- Postal Code Box ----------- */
+#postal-pos {
+	z-index:100;
+	display:none;
+	text-align: center;
+	width: 100%;
+}
+#postal-box {
+	display:inline-block;
+	width: 25em;
+	height: 15em;
+	background-color: #57E2CA;
+	border: 2px solid black;
+}
+#postal-top {
+	width: 100%;
+	height: 2em;
+	background-color: #57E2CA;
+	font: bold 1.7em arial, sans-serif;
+	line-height: 2em;
+	vertical-align: middle;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+#postal-body {
+	padding-top:1em;
+	width: 100%;
+	height: 8em;
+	vertical-align: middle;
+	text-align: center;
+	background-color: white;
+    cursor: text;
+}
+#postalbox {
+    resize: none;
+	vertical-align: middle;
+	padding:0.313em;
+    border: none;
+	font-size:2.5em;
+	text-align: center;
+}
+#postal-bottom {
+	bottom: 0px;
+	width: 100%;
+	height: 2em;
+	line-height: 2em;
+	vertical-align: bottom;
+	border-top: 1px solid black;
+}
+/* ----------- New Message Box ----------- */
+#newMsg {
+	display: none;
+	position: fixed;
+	bottom: 0px;
+	right: 0px;
+	width: 25em;
+	height: 15em;
+	z-index:99;
+	background-color: #57E2CA;
+	border-left: 2px solid black;
+	border-right: 2px solid black;
+	border-top: 2px solid black;
+}
+#newMsg-top {
+	width: 100%;
+	height: 2em;
+	background-color: #57E2CA;
+	font: bold 1.7em arial, sans-serif;
+	line-height: 2em;
+	vertical-align: middle;
+	text-align: center;
+	border-bottom: 1px solid black;
+}
+#newMsg-body {
+	padding-top:1em;
+	width: 100%;
+	height: 8em;
+	vertical-align: middle;
+	text-align: center;
+	background-color: white;
+    cursor: text;
+}
+#message {
+    resize: none;
+	vertical-align: middle;
+	padding:0.313em;
+    border: none;
+}
+#newMsg-bottom {
+	padding-top: 0.625em;
+	padding-left: 0.625em;
+	bottom: 0px;
+	width: 100%;
+	height: 2em;
+	line-height: 2em;
+	vertical-align: middle;
+	border-top: 1px solid black;
+	outline: 0;
+}
+#charLeft {
+	display:inline-block;
+	font: bold 1.5em arial, sans-serif;
+	color: white;
+}
+#postDiv {
+	display:inline-block;
+	width: 75%;
+}
+.postButton {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	background: #3498db;
+	background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+	background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+	background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+	background-image: -o-linear-gradient(top, #3498db, #2980b9);
+	background-image: linear-gradient(to bottom, #3498db, #2980b9);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	font: bold 1.25em arial, sans-serif;
+	border-radius: 1.75em;
+	color: white;
+	padding: 0.313em 1em 0.313em 1em;
+	text-decoration: none;
+	cursor: pointer;
+}
+/* ----------- Map ----------- */
+#mapDiv {
+	min-height: 8em;
+	height: 20%;
+}
+/* ----------- Messages ----------- */
+#msg-table {
+	padding:0;
+	margin:0;
+	padding-top:2.625em;
+	background-color: grey;
+}
+.map-msg-row {
+	height: 8em;
+	width:100%;
+    position: relative;
+	border-bottom:1px solid black;
+}
+.msg-row {
+	padding: 0.625em 0px 1.75em 0.625em;
+	width:calc(100% - 0.625em);
+    position: relative;
+	border-bottom:1px solid black;
+	transition: width 1s, height 1s; 
+}
+.msg {
+	word-wrap: break-word;
+	transition: width 1s, height 1s; 
+}
+@media (min-width: 600px) {
+	.msg {
+		width:calc(100% - 7em);
+	}
+	.msg-row {
+		min-height: 4em;
+	}
+}
+@media (max-width: 600px) {
+	.msg {
+		width:calc(100% - 5em);
+	}
+
+	.msg-row {
+		min-height: 6em;
+	}
+}
+.namebox {
+	position: absolute;
+	bottom: 0.625em;
+	left: 0.625em;
+}
+/* ----------- Reply Messages ----------- */
+.reply-msg-row {
+	padding: 0.625em 0px 1.75em 0.625em;
+	width:calc(100% - 0.625em);
+    position: relative;
+	border-bottom:1px solid black;
+}
+.reply-arrow {
+	top: 0px;
+	left: 0px;
+	height: 100%;
+    position: absolute;
+}
+.reply-msg {
+	margin-left: 4em;
+	word-wrap: break-word;
+}
+.reply-namebox {
+	padding-left: 4em;
+	bottom: 0.625em;
+	position: absolute;
+}
+@media (min-width: 600px) {
+	.reply-msg {
+		width:calc(100% - 11em);
+	}
+	.reply-msg-row {
+		min-height: 4em;
+	}
+}
+@media (max-width: 600px) {
+	.reply-msg {
+		width:calc(100% - 9em);
+	}
+
+	.reply-msg-row {
+		min-height: 6em;
+	}
+}
+/* ----------- Common message Elements ----------- */
+.timestamp {
+	display:none;
+}
+
+.likes {
+	text-align: center;
+	color: white;
+	font: bold 1.5em arial, sans-serif;
+	transition: all 1s;
+	position: absolute;
+	display: inline-block;
+}
+.time {
+	position: absolute;
+	text-align: center;
+	color: white;
+	transition: all 1s;
+}
+.reply-time {
+	position: absolute;
+	text-align: center;
+	color: white;
+	transition: all 1s;
+}
+@media (min-width: 600px) {
+	.likes {
+		top: 0.313em;
+		right: 0.625em;
+	}
+	.time {
+		top: 0.313em;
+		right: 4.3em;
+	}
+	.reply-time {
+		top: 0.313em;
+		right: 4.3em;
+	}
+}
+@media (max-width: 600px) {
+	.likes {
+		top: 1.8em;
+		right: 0.38em;
+	}
+	.time {
+		top: 0.2em;
+		right: 1.4em;
+	}
+	.reply-time {
+		top: 0.313em;
+		right: 1em;
+	}
+}
+.smallLikeButton {
+	width: 1.5em;
+	height: 0.9375em;
+	cursor:pointer;
+}
+.likeButton {
+	width: 2em;
+	height: 1.25em;
+	cursor:pointer;
+}
+.name {
+	color: white;
+}
+.dash {
+	color: white;
+}
+.reply {
+	color: #0000EE;
+	cursor: pointer;
+    text-decoration: underline;
+}
